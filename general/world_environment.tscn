@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://bsaj8m1hjoku3"]
+
+[sub_resource type="Sky" id="Sky_too0c"]
+
+[sub_resource type="Environment" id="Environment_i6rxy"]
+background_mode = 2
+sky = SubResource("Sky_too0c")
+
+[node name="WorldEnvironment" type="WorldEnvironment" unique_id=979105253]
+environment = SubResource("Environment_i6rxy")

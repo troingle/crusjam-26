@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://ceiprgc5qh7b8"]
+
+[ext_resource type="PackedScene" uid="uid://bsaj8m1hjoku3" path="res://general/world_environment.tscn" id="1_eus5j"]
+[ext_resource type="PackedScene" uid="uid://d2rbj2di78k6x" path="res://entities/player/player.tscn" id="2_823pn"]
+[ext_resource type="Texture2D" uid="uid://dr25d0cr8ls63" path="res://assets/textures/terrain/Stone_05-128x128.png" id="3_iss0w"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yi3jx"]
+shading_mode = 0
+albedo_texture = ExtResource("3_iss0w")
+uv1_scale = Vector3(0.345, 0.345, 0.345)
+uv1_triplanar = true
+texture_filter = 0
+
+[node name="Level0" type="Node3D" unique_id=1416663023]
+
+[node name="WorldEnvironment" parent="." unique_id=979105253 instance=ExtResource("1_eus5j")]
+
+[node name="Player" parent="." unique_id=540063033 instance=ExtResource("2_823pn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="TestTerrain" type="CSGCombiner3D" parent="." unique_id=834032024]
+use_collision = true
+
+[node name="CSGBox3D" type="CSGBox3D" parent="TestTerrain" unique_id=530305619]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 18.555664)
+size = Vector3(29, 1, 54.11133)
+material = SubResource("StandardMaterial3D_yi3jx")
