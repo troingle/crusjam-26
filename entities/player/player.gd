@@ -4,7 +4,7 @@ extends CharacterBody3D
 
 var jump_velocity = 6.5
 var move_speed = 8.1
-var auto_bhop = true
+var auto_bhop = false
 
 var wish_dir = Vector3.ZERO
 
@@ -13,7 +13,7 @@ const HEADBOB_FREQUENCY = 1.8
 var headbob_time = 0.0
 
 # Air movement
-var air_cap := 0.94 # 0.85, Can surf steeper ramps if this is higher, makes it easier to stick and bhop
+var air_cap := 0.94
 var air_accel := 800.0
 var air_move_speed := 500.0
 
@@ -100,7 +100,7 @@ func _handle_ground_physics(delta) -> void:
 
 func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("pause"): menu_open = not menu_open
-	#$CanvasLayer/Menu.visible = menu_open
+	$CanvasLayer/Menu.visible = menu_open
 
 	if menu_open: 
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)

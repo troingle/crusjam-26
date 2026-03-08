@@ -1,0 +1,16 @@
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1772698073
+README.md::TextFile::-1::1772698024::0::1::::<><><>0<>0<><>::
+::res://assets/::1772698024
+::res://assets/textures/::1772698024
+::res://assets/textures/terrain/::1772698024
+Stone_05-128x128.png::CompressedTexture2D::8410038776440494218::1772698024::1772698122::1::::<><><>0<>0<>2f04fa5b1fe8e7d770b4988cdbe748c1<>res://.godot/imported/Stone_05-128x128.png-b43cf62543332e0a88822f0765dc2958.s3tc.ctex::
+::res://entities/::1772698024
+::res://entities/player/::1772698024
+player.gd::GDScript::4371939366547505794::1772698024::0::1::::<>CharacterBody3D<><>0<>0<><>::
+player.tscn::PackedScene::9089533463435527205::1772698024::0::1::::<><><>0<>0<><>::uid://b3j2g5hywvwog::::res://entities/player/player.gd
+::res://general/::1772698024
+global.gd::GDScript::3904311073151998053::1772698024::0::1::::<>Node<><>0<>0<><>::
+world_environment.tscn::PackedScene::3650425924087197772::1772698024::0::1::::<><><>0<>0<><>::
+::res://levels/::1772698024
+level_0.tscn::PackedScene::5071053196973156027::1772698024::0::1::::<><><>0<>0<><>::uid://bsaj8m1hjoku3::::res://general/world_environment.tscn<>uid://d2rbj2di78k6x::::res://entities/player/player.tscn<>uid://dr25d0cr8ls63::::res://assets/textures/terrain/Stone_05-128x128.png
